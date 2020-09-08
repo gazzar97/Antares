@@ -1,0 +1,44 @@
+mat-sidenav-container{
+  height: 100%;
+  width:100%;
+  background: url(./../assets/home/background.jpg);
+}
+mat-sidenav , mat-sidenev-content{
+    padding: 16px;
+   
+}
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;  
+  width: 100%;
+  height: 100%;
+  background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+
+}
+mat-sidenav {
+  background-color: #3F51B5;
+  width:26%;
+  color: #FFF;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.list-items__links{
+    margin-top: 85px;
+
+
+}
+.lits-item__class{
+  color:#FFF;
+  text-decoration: none;
+  transition: color .5s;
+}
+.lits-item__class:hover{
+  color:red;
+  
+}
+a{
+  color:#FFF;
+  text-decoration: none;
+}

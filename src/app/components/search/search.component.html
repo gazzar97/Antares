@@ -1,1 +1,5 @@
-<p>search works!</p>
+<mat-form-field class="example-full-width">
+    <mat-label>Type a City & Hit Enter </mat-label>
+    <input matInput placeholder="Ex. Cairo" value="Cairo" (keyup.enter)="onKey($event)">
+ 
+  </mat-form-field>

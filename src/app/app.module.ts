@@ -16,6 +16,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { AboutusDetailsComponent } from './components/aboutus-details/aboutus-details.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { DisplayWhetherDataComponent } from './components/display-whether-data/display-whether-data.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,8 @@ import { AboutusDetailsComponent } from './components/aboutus-details/aboutus-de
     ProfileComponent,
     AboutusComponent,
     AboutusDetailsComponent,
+    DisplayWhetherDataComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -37,6 +43,9 @@ import { AboutusDetailsComponent } from './components/aboutus-details/aboutus-de
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    MatInputModule,
+    MatFormFieldModule,
+    HttpClientModule,
     
 
   ],

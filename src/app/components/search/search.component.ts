@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  cityLocation:string;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onKey(event:any){
+    this.cityLocation = event.target.value;
+   
   }
 
 }

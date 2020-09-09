@@ -1,18 +1,18 @@
 <mat-sidenav-container >
-  <mat-sidenav  mode="side" [(opened)]="opened">
+  <mat-sidenav  mode="over" [(opened)]="opened">
   
       <button style="float: left; border: none;" mat-icon-button class="example-icon" (click)="toggleClick()"  aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
       <span class="example-spacer"></span>
-      <h5 style="float: right;margin-top: 6px;"><a [routerLink]="['/']">Antares | <i class="fas fa-cloud"></i></a></h5>
+      <h5 style="float: right;margin-top: 6px;"><a (click)="toggleClick()" [routerLink]="['/']">Antares | <i class="fas fa-cloud"></i></a></h5>
       <div class="list-items__links">
         <mat-list style="margin-bottom: 85%;">
-          <mat-list-item style="color:#FFF;"><a class="lits-item__class" [routerLink]="['/home']" >Home</a></mat-list-item>
+          <mat-list-item style="color:#FFF;"><a class="lits-item__class" (click)="toggleClick()" [routerLink]="['/home']" >Home</a></mat-list-item>
           <mat-divider style="color:#FFF;"></mat-divider>
-          <mat-list-item style="color:#FFF;"><a class="lits-item__class" [routerLink]="['/profile']" >Profile</a></mat-list-item>
+          <mat-list-item style="color:#FFF;"><a class="lits-item__class" (click)="toggleClick()" [routerLink]="['/profile']" >Profile</a></mat-list-item>
           <mat-divider style="color:#FFF;"></mat-divider>
-          <mat-list-item style="color:#FFF;"><a class="lits-item__class" [routerLink]="['/aboutus']" >About Us </a></mat-list-item>
+          <mat-list-item style="color:#FFF;"><a class="lits-item__class" (click)="toggleClick()" [routerLink]="['/aboutus']" >About Us </a></mat-list-item>
         </mat-list>
 
         <footer style="width: 150px; margin:auto;">

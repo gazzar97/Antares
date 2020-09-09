@@ -42,3 +42,12 @@ a{
   color:#FFF;
   text-decoration: none;
 }
+
+@media only screen and (max-width:450px){
+
+  mat-sidenav {
+    width:70%;
+
+  }
+
+}

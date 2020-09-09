@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Output, Input,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-display-whether-data',
@@ -12,7 +12,6 @@ export class DisplayWhetherDataComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  cityName:string;
+  @Input() cityName:string;
   countryName:string;
-
 }

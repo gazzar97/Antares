@@ -20,6 +20,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { DisplayWhetherDataComponent } from './components/display-whether-data/display-whether-data.component';
 import {HttpClientModule} from '@angular/common/http';
+import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {HttpClientModule} from '@angular/common/http';
     AboutusComponent,
     AboutusDetailsComponent,
     DisplayWhetherDataComponent,
+    WeatherDetailsComponent,
    
   ],
   imports: [

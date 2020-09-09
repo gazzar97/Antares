@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   @ViewChild(SearchComponent) searchInputComponent;
   @ViewChild(DisplayWhetherDataComponent) displayWeatherData;
   constructor(private weatheService:WeatherServiceService){
+    this.cityLocation="Cairo";
     this.currentWeather = this.weatheService.getCurrentWeather("Cairo").then(weather=>{
       return weather.json();
     }).then(this.extractDataFromPromise);
